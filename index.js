@@ -1,12 +1,8 @@
-// week 6, day 4, activity 9, movie manage
-
 var inquirer = require("inquirer");
+var Word = require('./word.js');
 
 var attempts = 10;
 var mistakes = [];
-
-console.log("\n Let's Play Hangman! \n");
-console.log("\n Your word is... \n \n");
 
 function game() {
 

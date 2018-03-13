@@ -8,12 +8,16 @@ var Letter = function(guess){
         else {
             return "__";
         }
-	};
+    };
+    this.checker = function(verify) {
+        if (verify == this.guess) {
+            this.known = true; 
+            return true; 
+        }
+        else {
+            return false; 
+        }
+    }
 };
 
 module.exports = Letter;
-
-
-
-
-var answer = ["octopus", "mermaid", "varmint", "highfalutin", "sorcerer", "manticore", "grimalkin"]; 
